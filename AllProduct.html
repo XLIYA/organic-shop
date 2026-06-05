@@ -1,74 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class=" bg-[#68b0ab] w-screen h-full">
-     <header
-        class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0 z-50">
-        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans">Organic Market</h2>
-        <div class="flex gap-6 font-sans items-center">
-            <button class="font-extrabold text-[#3F7D20]">HOME</button>
-            <button class="font-extrabold text-[#3F7D20]">SHOP</button>
-            <button class="font-extrabold text-[#3F7D20]">ABOUT</button>
-            <button><img class="w-10 h-10 object-contain" src="assets/icons8-shop-48.png" alt="cart"></button>
-        </div>
+  </head>
+
+  <body class="bg-[#c5e6e3] w-screen h-full">
+    <header
+      class="flex justify-between items-center w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0 z-50"
+    >
+      <h2 class="text-[#3F7D20] text-xl lg:text-5xl font-extrabold font-sans">
+        Organic Market
+      </h2>
+      <div class="flex gap-2 lg:gap-6 font-sans items-center">
+        <button class="font-extrabold text-[#3F7D20]">HOME</button>
+        <button class="font-extrabold text-[#3F7D20]">SHOP</button>
+        <button class="font-extrabold text-[#3F7D20]">ABOUT</button>
+        <button>
+          <img
+            class="w-10 h-10 object-contain"
+            src="assets/icons8-shop-48.png"
+            alt="cart"
+          />
+        </button>
+      </div>
     </header>
 
-   <main>
+    <main>
+      <div class="flex gap-3 font-sans mt-32 lg:mt-32 px-3 lg:px-10">
+        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+          Organic
+        </button>
+        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+          Vegetables
+        </button>
+        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+          Fruits
+        </button>
+        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+          Under$20
+        </button>
+        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+          Popular
+        </button>
+      </div>
 
-    <div class=" flex gap-3 font-sans mt-80 px-10">
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">Organic</button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">Vegetables</button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">Fruits</button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">Under$20</button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">Popular</button>
-    </div>
-
-
-
-    <div class="grid grid-cols-3 mt-3 gap-3 px-10">
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-        <div class="bg-[#F3EFF5]  rounded-2xl overflow-hidden">
-            <img class="w-full h-auto block mb-2" src="imag-best-seller/best1.jpg" alt="">
-            <p class="ml-2 font-sans text-lg font-bold">Product 1 </p>
-        </div>
-    </div>
-
-    <div>
-        <input type="text">
-        <select name="" id="">
+      <div class="flex flex-row">
+        <div class="bg-zinc-100 rounded-2xl p-3 m-3 lg:ml-10">
+          <input
+            placeholder="Search"
+            type="text"
+            class="w-full h-10 rounded-xl my-3 p-2"
+          />
+          <select class="w-full h-10 rounded-xl bg-white p-2">
             <option value="">Brand</option>
             <option value="">Name</option>
             <option value="">Price</option>
-        </select>
-    </div>
+          </select>
+        </div>
 
-   </main>
+        <div class="flex flex-col">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 gap-3 px-3">
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2 ">Product 1</p>
+            </div>
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
+            </div>
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
+            </div>
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
+            </div>
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
+            </div>
+            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-auto block mb-2"
+                src="imag-best-seller/best1.jpg"
+                alt=""
+              />
+              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
+            </div>
+          </div>
+          <div class="flex justify-center gap-2 lg:gap-5 my-10">
+            <button
+              class="cursor-pointer w-10 h-10 bg-white rounded-lg hover:bg-green-600"
+            >
+              1
+            </button>
+            <button
+              class="cursor-pointer w-10 h-10 bg-white rounded-lg hover:bg-green-600"
+            >
+              2
+            </button>
+            <button
+              class="cursor-pointer w-10 h-10 bg-white rounded-lg hover:bg-green-600"
+            >
+              3
+            </button>
+            <button
+              class="cursor-pointer w-20 h-10 bg-white rounded-lg hover:bg-green-600"
+            >
+              Next→
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-slate-950 text-white border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <!-- Brand -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">OrganicMarket</h3>
+            <p class="text-slate-300 leading-relaxed">
+              Premium organic products.
+            </p>
+          </div>
 
+          <!-- Shop -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">Shop</h3>
+            <ul class="space-y-2 text-slate-300">
+              <li>
+                <a href="#" class="hover:text-white transition"> Vegetables </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"> Fruits </a>
+              </li>
+            </ul>
+          </div>
 
+          <!-- Support -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">Support</h3>
+            <ul class="space-y-2 text-slate-300">
+              <li>
+                <a href="#" class="hover:text-white transition"> FAQ </a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"> Contact </a>
+              </li>
+            </ul>
+          </div>
 
-</body>
+          <!-- Newsletter -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full rounded-md bg-white text-black px-4 py-3 outline-none"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-800 py-5 text-center text-slate-300">
+        © 2026 OrganicMarket
+      </div>
+    </footer>
+  </body>
 </html>
