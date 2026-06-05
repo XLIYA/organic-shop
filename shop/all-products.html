@@ -30,88 +30,31 @@
     </header>
 
     <main>
-      <div class="flex gap-3 font-sans mt-32 lg:mt-32 px-3 lg:px-10">
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
-          Organic
-        </button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
-          Vegetables
-        </button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
-          Fruits
-        </button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+      <div id="btn-container" class="flex gap-3 font-sans mt-32 lg:mt-32 px-3 lg:px-10">
+       
+        <button id="undertwonty" class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
           Under$20
         </button>
-        <button class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
+        <button  id="Popular" class="rounded-2xl bg-[#F3EFF5] border-gray-300 px-3 py-1">
           Popular
         </button>
       </div>
 
-      <div class="flex flex-row">
-        <div class="bg-zinc-100 rounded-2xl p-3 m-3 lg:ml-10">
+      <div class="flex flex-row w-screen">
+        <div class="bg-zinc-100 w-[30%] rounded-2xl p-3 m-3 lg:ml-10">
           <input
             placeholder="Search"
             type="text"
             class="w-full h-10 rounded-xl my-3 p-2"
           />
-          <select class="w-full h-10 rounded-xl bg-white p-2">
-            <option value="">Brand</option>
-            <option value="">Name</option>
-            <option value="">Price</option>
+          <select id="select-container" class="w-full h-10 rounded-xl bg-white p-2">
+            
           </select>
         </div>
 
-        <div class="flex flex-col">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 gap-3 px-3">
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2 ">Product 1</p>
-            </div>
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
-            </div>
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
-            </div>
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
-            </div>
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
-            </div>
-            <div class="bg-[#F3EFF5] rounded-2xl overflow-hidden">
-              <img
-                class="w-full h-auto block mb-2"
-                src="../imag-best-seller/best3.jpg"
-                alt=""
-              />
-              <p class="ml-2 font-sans text-lg font-bold p-2">Product 1</p>
-            </div>
+        <div  class="flex flex-col">
+          <div id="product-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 gap-3 px-3">
+          
           </div>
           <div class="flex justify-center gap-2 lg:gap-5 my-10">
             <button
@@ -192,5 +135,8 @@
         © 2026 OrganicMarket
       </div>
     </footer>
+    <script src="../components/allproductfunction.js"></script>
+
+"></script>
   </body>
 </html>
