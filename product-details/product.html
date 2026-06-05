@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Market - Avocado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="m-0 min-h-screen bg-white p-0 text-black font-sans">
+
+    <!-- هدر -->
+    <header
+        class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0 z-50">
+        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans">Organic Market</h2>
+        <div class="flex gap-6 font-sans items-center">
+
+            <button class="font-extrabold text-[#3F7D20]">HOME</button>
+            <a href="shop/all-products.html"><button class="font-extrabold text-[#3F7D20]">SHOP</button></a>
+            <button class="font-extrabold text-[#3F7D20]">ABOUT</button>
+            <button><img class="w-10 h-10 object-contain" src="../assets/icons8-shop-48.png" alt="cart"></button>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-16 max-w-5xl mx-auto px-5">
+        <!-- کل پروداکت-->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+            <!-- عکس -->
+            <div class="space-y-4">
+                <div class="rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
+                    <img src="../imag-best-seller/best2.jpg" class="w-full h-[400px] object-cover">
+                </div>
+                <div class="grid grid-cols-4 gap-3">
+                    <img src="../imag-best-seller/best2.jpg"
+                        class="rounded-xl cursor-pointer border-2 border-green-500">
+                    <img src="../imag-best-seller/best2.jpg" class="rounded-xl cursor-pointer hover:opacity-75">
+                    <img src="../imag-best-seller/best2.jpg" class="rounded-xl cursor-pointer hover:opacity-75">
+                    <img src="../imag-best-seller/best2.jpg" class="rounded-xl cursor-pointer hover:opacity-75">
+                </div>
+            </div>
+
+            <!-- توضیحات-->
+            <div class="flex flex-col gap-4">
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold w-fit">Organic
+                    Collection</span>
+                <h1 class="text-4xl font-bold">Organic Avocado</h1>
+                <p class="text-2xl font-bold text-green-600">$24.99</p>
+                <p class="text-gray-500 leading-relaxed">
+                    Premium organic avocado with rich nutrition and fresh taste.
+                </p>
+
+                <!-- باتن -->
+                <div class="flex items-center gap-4 mt-2">
+                    <div class="flex items-center border border-gray-200 rounded-lg">
+                        <button class="px-3 py-1 text-gray-500 hover:text-green-600">-</button>
+                        <span class="px-4 py-1 font-medium">1</span>
+                        <button class="px-3 py-1 text-gray-500 hover:text-green-600">+</button>
+                    </div>
+                </div>
+                <button
+                    class="bg-green-800 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-lg transition mt-2 w-fit">
+                    Add To Cart
+                </button>
+
+                <!-- اطلاعات -->
+                <div class="mt-8 bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-lg mb-2">Product Details</h3>
+                    <p class="text-gray-600 text-sm">
+                        Rich in vitamins, sustainably sourced and freshly delivered.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ری ویو -->
+        <section class="mt-20">
+            <h2 class="text-2xl font-bold mb-8">Customer Reviews</h2>
+            <div class="space-y-4">
+                <!-- 1 -->
+                <div class="p-5 rounded-xl border border-gray-100 bg-white shadow-sm flex items-center gap-4">
+                    <div class="text-sm text-black flex items-center gap-1">
+                        ★★★★★ <span class="ml-4 font-medium">Amazing quality and taste.</span>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="p-5 rounded-xl border border-gray-100 bg-white shadow-sm flex items-center gap-4">
+                    <div class="text-sm text-black flex items-center gap-1">
+                        ★★★★★ <span class="ml-4 font-medium">Delivery was very fast.</span>
+                    </div>
+                </div>
+                <!--  3 -->
+                <div class="p-5 rounded-xl border border-gray-100 bg-white shadow-sm flex items-center gap-4">
+                    <div class="text-sm text-black flex items-center gap-1">
+                        ★★★★★ <span class="ml-4 font-medium">Fresh and affordable.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-black text-white pt-16 pb-8">
+        <div class="max-w-5xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="font-bold text-lg mb-4">OrganicMarket</h3>
+                <p class="text-gray-400 text-sm">Premium organic products.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Shop</h3>
+                <ul class="text-gray-400 text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white">Vegetables</a></li>
+                    <li><a href="#" class="hover:text-white">Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Support</h3>
+                <ul class="text-gray-400 text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+                <input type="email" placeholder="Email"
+                    class="w-full bg-white rounded-md px-4 py-2 text-black focus:outline-none">
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-8 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            © 2026 OrganicMarket
+        </div>
+    </footer>
+
+</body>
+
+</html>
