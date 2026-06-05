@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 min-h-screen bg-slate-50 p-0 text-[#0D0A0B]">
+    <header
+        class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0 z-50">
+        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans">Organic Market</h2>
+        <div class="flex gap-6 font-sans items-center">
+            <button class="font-extrabold text-[#3F7D20]">HOME</button>
+            <button class="font-extrabold text-[#3F7D20]">SHOP</button>
+            <button class="font-extrabold text-[#3F7D20]">ABOUT</button>
+            <button><img class="w-10 h-10 object-contain" src="../assets/icons8-shop-48.png" alt="cart"></button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="product-state" class="mx-auto flex min-h-[70vh] max-w-6xl items-center justify-center px-5 py-16">
+            <p class="text-lg font-bold text-slate-600">Loading product...</p>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+                <!-- Brand -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">
+                        OrganicMarket
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Premium organic products.
+                    </p>
+                </div>
+
+                <!-- Shop -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">
+                        Shop
+                    </h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>
+                            <a href="#" class="hover:text-white transition">
+                                Vegetables
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white transition">
+                                Fruits
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">
+                        Support
+                    </h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li>
+                            <a href="#" class="hover:text-white transition">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-white transition">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">
+                        Newsletter
+                    </h3>
+
+                    <input type="email" placeholder="Email"
+                        class="w-full rounded-md bg-white text-black px-4 py-3 outline-none" />
+                </div>
+
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="border-t border-slate-800 py-5 text-center text-slate-300">
+            © 2026 OrganicMarket
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+
+</html>
