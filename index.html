@@ -8,65 +8,156 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 p-0 overflow-x-hidden">
 
-    <!-- this is header and btn -->
-
-    <header class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0">
-        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans"> Organic Market </h2>
-        <div class="flex gap-6 font-sans">
-            <button class="font-extrabold text-[#3F7D20]"> HOME</buttonclass=font-extrabold>
-                <button class="font-extrabold text-[#3F7D20]">SHOP </button>
-                <button class="font-extrabold text-[#3F7D20]"> ABOUT </button>
-                <button><img class="w-[70%]" src="assets/icons8-shop-48.png" alt=""></button>
+    <!-- Header -->
+    <header class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0 z-50">
+        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans">Organic Market</h2>
+        <div class="flex gap-6 font-sans items-center">
+            <button class="font-extrabold text-[#3F7D20]">HOME</button>
+            <button class="font-extrabold text-[#3F7D20]">SHOP</button>
+            <button class="font-extrabold text-[#3F7D20]">ABOUT</button>
+            <button><img class="w-10 h-10 object-contain" src="assets/icons8-shop-48.png" alt="cart"></button>
         </div>
     </header>
 
-    <!-- img and info  -->
+    <!-- Hero Section — full viewport height -->
+    <section class="flex flex-row-reverse items-center px-24 bg-gradient-to-tl from-slate-50 to-green-300 w-full h-screen pt-20">
 
-    <div class="flex flex-row-reverse pt-48 px-24 bg-gradient-to-tl from-slate-50 to-green-300 w-full h-[50%]">
+        <img class="w-[48%] h-[75%] object-cover rounded-3xl" src="assets/fruits-vegetables-rack-scaled.jpg" alt="fresh vegetables">
 
-        <img class="w-[50%] mb-40 rounded-3xl" src="assets/fruits-vegetables-rack-scaled.jpg" alt="">
-
-        <div class="flex flex-col gap-10">
-            <div class="flex gap-2 bg-[#F3EFF5] rounded-2xl px-3 py-2 items-center  w-[40%] h-10 text-lg font-bold font-sans">
-                <img class="w-6 h-6" src="assets/icons8-sprout-94.png" alt="">
-
-                    100 % Natural & Organic 
+        <div class="flex flex-col gap-8 w-[48%]">
+            <div class="flex gap-2 bg-[#F3EFF5] rounded-2xl px-3 py-2 items-center w-fit h-10 text-lg font-bold font-sans">
+                <img class="w-6 h-6" src="assets/icons8-sprout-94.png" alt="sprout">
+                100 % Natural & Organic
             </div>
 
-            <p class="font-extrabold font-sans text-8xl">Healthy Living Starts With Fresh Food </p>
-            <p class="text-sm font-bold font-sans"> Premium organic groceries delivered to your doorstep</p>
+            <p class="font-extrabold font-sans text-7xl leading-tight">Healthy Living Starts With Fresh Food</p>
+            <p class="text-sm font-bold font-sans text-gray-600">Premium organic groceries delivered to your doorstep</p>
 
-    <!-- two btn -->
-
-            <span class="flex gap-2">
-                <button class="bg-[#3F7D20] text-[#F3EFF5] font-sans font-bold rounded-lg px-5 py-2 w-[20%]"> Shop Now</button>
-                <button class=" hover:bg-[#3F7D20]  hover:text-[#F3EFF5] text-[#0D0A0B] font-sans font-bold rounded-lg px-5 py-2 w-[20%]"> Explore </button>
+            <span class="flex gap-3">
+                <button class="bg-[#3F7D20] text-[#F3EFF5] font-sans font-bold rounded-lg px-6 py-3">Shop Now</button>
+                <button class="border border-[#3F7D20] hover:bg-[#3F7D20] hover:text-[#F3EFF5] text-[#0D0A0B] font-sans font-bold rounded-lg px-6 py-3 transition-colors duration-200">Explore</button>
             </span>
 
-
-    <!-- Rating and stars -->
-
-            <div class="flex gap-20 mt-20">
+            <div class="flex gap-16 mt-6">
                 <div class="flex flex-col">
-                    <span class="font-sans font-extrabold text-4xl" >50K</span>
-                    <span class="font-sans font-bold text-sm">Customers</span>
+                    <span class="font-sans font-extrabold text-4xl">50K</span>
+                    <span class="font-sans font-bold text-sm text-gray-600">Customers</span>
                 </div>
                 <div class="flex flex-col">
                     <span class="font-sans font-extrabold text-4xl">500</span>
-                    <span class="font-sans font-bold text-sm">Products</span>
+                    <span class="font-sans font-bold text-sm text-gray-600">Products</span>
                 </div>
                 <div class="flex flex-col">
                     <span class="font-sans font-extrabold text-4xl">4.9</span>
-                    <span class="font-sans font-bold text-sm">Rating</span>
+                    <span class="font-sans font-bold text-sm text-gray-600">Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section — full viewport height -->
+    <section class="w-full min-h-screen flex items-center justify-center bg-slate-100 py-12">
+        <div class="w-[90%] max-w-6xl">
+            <h1 class="text-3xl font-bold mb-8">Best Sellers</h1>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+                <!-- card1 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best1.jpg" alt="product 1" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 1</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 11</p>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best2.jpg" alt="product 2" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 2</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 12</p>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best3.jpg" alt="product 3" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 3</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 13</p>
+                    </div>
+                </div>
+                <!-- card4 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best4.jpg" alt="product 4" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 4</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 14</p>
+                    </div>
+                </div>
+                <!-- card5 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best5.jpg" alt="product 5" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 5</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 15</p>
+                    </div>
+                </div>
+                <!-- card6 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best1.jpg" alt="product 6" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 6</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 16</p>
+                    </div>
+                </div>
+                <!-- card7 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best2.jpg" alt="product 7" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 7</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 17</p>
+                    </div>
+                </div>
+                <!-- card8 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best3.jpg" alt="product 8" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 8</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 18</p>
+                    </div>
+                </div>
+                <!-- card9 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best4.jpg" alt="product 9" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 9</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 19</p>
+                    </div>
+                </div>
+                <!-- card10 -->
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                    <img src="imag-best-seller/best5.jpg" alt="product 10" class="w-full aspect-square object-cover">
+                    <div class="px-3 py-3 flex flex-col gap-1">
+                        <p class="text-[10px] text-gray-500 font-medium">Organic</p>
+                        <h3 class="text-sm font-bold text-gray-800">Product 10</h3>
+                        <p class="text-[#3F7D20] font-bold text-sm">$ 20</p>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </section>
 
-
-    </div>
 </body>
 
 </html>
