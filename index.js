@@ -1,0 +1,1 @@
+import { getBestsellerProducts} from "./components/bestsellerfunction.js";
