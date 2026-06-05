@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>organic-shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+
+    <!-- this is header and btn -->
+
+    <header class="flex justify-between w-screen h-20 px-5 py-3 bg-gradient-to-r from-slate-50 to-green-200 fixed left-0 top-0">
+        <h2 class="text-[#3F7D20] text-5xl font-extrabold font-sans"> Organic Market </h2>
+        <div class="flex gap-6 font-sans">
+            <button class="font-extrabold text-[#3F7D20]"> HOME</buttonclass=font-extrabold>
+                <button class="font-extrabold text-[#3F7D20]">SHOP </button>
+                <button class="font-extrabold text-[#3F7D20]"> ABOUT </button>
+                <button><img class="w-[70%]" src="assets/icons8-shop-48.png" alt=""></button>
+        </div>
+    </header>
+
+    <!-- img and info  -->
+
+    <div class="flex flex-row-reverse pt-48 px-24 bg-gradient-to-tl from-slate-50 to-green-300 w-full h-[50%]">
+
+        <img class="w-[50%] mb-40 rounded-3xl" src="assets/fruits-vegetables-rack-scaled.jpg" alt="">
+
+        <div class="flex flex-col gap-10">
+            <div class="flex gap-2 bg-[#F3EFF5] rounded-2xl px-3 py-2 items-center  w-[40%] h-10 text-lg font-bold font-sans">
+                <img class="w-6 h-6" src="assets/icons8-sprout-94.png" alt="">
+
+                    100 % Natural & Organic 
+            </div>
+
+            <p class="font-extrabold font-sans text-8xl">Healthy Living Starts With Fresh Food </p>
+            <p class="text-sm font-bold font-sans"> Premium organic groceries delivered to your doorstep</p>
+
+    <!-- two btn -->
+
+            <span class="flex gap-2">
+                <button class="bg-[#3F7D20] text-[#F3EFF5] font-sans font-bold rounded-lg px-5 py-2 w-[20%]"> Shop Now</button>
+                <button class=" hover:bg-[#3F7D20]  hover:text-[#F3EFF5] text-[#0D0A0B] font-sans font-bold rounded-lg px-5 py-2 w-[20%]"> Explore </button>
+            </span>
+
+
+    <!-- Rating and stars -->
+
+            <div class="flex gap-20 mt-20">
+                <div class="flex flex-col">
+                    <span class="font-sans font-extrabold text-4xl" >50K</span>
+                    <span class="font-sans font-bold text-sm">Customers</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-sans font-extrabold text-4xl">500</span>
+                    <span class="font-sans font-bold text-sm">Products</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-sans font-extrabold text-4xl">4.9</span>
+                    <span class="font-sans font-bold text-sm">Rating</span>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
 </body>
+
 </html>
